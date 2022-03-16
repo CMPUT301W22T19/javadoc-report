@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,6 +131,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Player</span>
 extends java.lang.Object</pre>
+<div class="block">Represents an application user. Allows the user to collect QR codes, track information
+ related to their collection like images, statistics, and geolocations. A Player is
+ identified using their username. Each username is guaranteed to be unique.</div>
 </li>
 </ul>
 </div>
@@ -190,69 +193,99 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEmail()">getEmail</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.HashMap&lt;java.lang.String,&#8203;android.graphics.Bitmap&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameQRCodeImages()">getGameQRCodeImages</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns a hashmap of Bitmap images associated with a game QR code</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameQRCodes()">getGameQRCodes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns all GameQRCode objects which belong to the Player's collection.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHighestQRCode()">getHighestQRCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the QR code belonging to the player which has the highest point value.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowestQRCode()">getLowestQRCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the QR code belonging to the player which has the lowest point value.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPhoneNumber()">getPhoneNumber</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointTotal()">getPointTotal</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the sum of QR code points belonging to the player.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProfileImage()">getProfileImage</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>android.graphics.Bitmap</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProfilePic()">getProfilePic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns profile picture associated with player</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalCodes()">getTotalCodes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns a count of the total number of GameQRCodes wihtin the collection</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUsername()">getUsername</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns username associated with Player</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEmail(java.lang.String)">setEmail</a></span>&#8203;(java.lang.String&nbsp;email)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPhoneNumber(java.lang.String)">setPhoneNumber</a></span>&#8203;(java.lang.String&nbsp;phoneNumber)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProfileImage(java.lang.String)">setProfileImage</a></span>&#8203;(java.lang.String&nbsp;profileImage)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProfilePic(android.graphics.Bitmap)">setProfilePic</a></span>&#8203;(android.graphics.Bitmap&nbsp;profilePic)</code></th>
 <td class="colLast">
 <div class="block">updates profile picture associated with player</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUsername(java.lang.String)">setUsername</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">
@@ -333,6 +366,60 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>username</code> - new username to set</dd>
 </dl>
+</li>
+</ul>
+<a id="getEmail()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEmail</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getEmail()</pre>
+</li>
+</ul>
+<a id="setEmail(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEmail</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setEmail&#8203;(java.lang.String&nbsp;email)</pre>
+</li>
+</ul>
+<a id="getPhoneNumber()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPhoneNumber</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getPhoneNumber()</pre>
+</li>
+</ul>
+<a id="setPhoneNumber(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPhoneNumber</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPhoneNumber&#8203;(java.lang.String&nbsp;phoneNumber)</pre>
+</li>
+</ul>
+<a id="getProfileImage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProfileImage</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getProfileImage()</pre>
+</li>
+</ul>
+<a id="setProfileImage(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProfileImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setProfileImage&#8203;(java.lang.String&nbsp;profileImage)</pre>
 </li>
 </ul>
 <a id="getProfilePic()">

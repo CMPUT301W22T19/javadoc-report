@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,6 +131,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">GameQRCode</span>
 extends java.lang.Object</pre>
+<div class="block">This class represents the Game QR Codes that players can scan to get points</div>
 </li>
 </ul>
 </div>
@@ -152,7 +153,25 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">GameQRCode</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">No arg Constructor to create class from data fetched from Database</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int)">GameQRCode</a></span>&#8203;(java.lang.String&nbsp;hash,
+          int&nbsp;points)</code></th>
+<td class="colLast">
+<div class="block">Constructor for the object if the player chooses to only record the points and hash</div>
+</td>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int,double,double)">GameQRCode</a></span>&#8203;(java.lang.String&nbsp;hash,
+          int&nbsp;points,
+          double&nbsp;latitude,
+          double&nbsp;longitude)</code></th>
+<td class="colLast">
+<div class="block">Constructor for the object if the player chooses to record the location along with the points</div>
+</td>
 </tr>
 </table>
 </li>
@@ -173,17 +192,59 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHash()">getHash</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAmountOfScans()">getAmountOfScans</a></span>()</code></th>
 <td class="colLast">
-<div class="block">returns the has associated with the QR code</div>
+<div class="block">Returns the amount times the QR code has been scanned by all players</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.lang.String[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCommentSection()">getCommentSection</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the list of comments for this QR Code</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHash()">getHash</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the hash of the QR Code</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLatitude()">getLatitude</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the Latitude of the QR Code</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLongitude()">getLongitude</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the longitude of the QR Code</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPoints()">getPoints</a></span>()</code></th>
 <td class="colLast">
-<div class="block">return the point value associated with the QR code</div>
+<div class="block">Returns the amount of points of the QR Code</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLatitude(double)">setLatitude</a></span>&#8203;(double&nbsp;latitude)</code></th>
+<td class="colLast">
+<div class="block">Sets the Latitude of the QR Code</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLongitude(double)">setLongitude</a></span>&#8203;(double&nbsp;longitude)</code></th>
+<td class="colLast">
+<div class="block">Sets the longitude of the QR Code</div>
 </td>
 </tr>
 </table>
@@ -210,6 +271,42 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a id="&lt;init&gt;(java.lang.String,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GameQRCode</h4>
+<pre>public&nbsp;GameQRCode&#8203;(java.lang.String&nbsp;hash,
+                  int&nbsp;points)</pre>
+<div class="block">Constructor for the object if the player chooses to only record the points and hash</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hash</code> - </dd>
+<dd><code>points</code> - </dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(java.lang.String,int,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GameQRCode</h4>
+<pre>public&nbsp;GameQRCode&#8203;(java.lang.String&nbsp;hash,
+                  int&nbsp;points,
+                  double&nbsp;latitude,
+                  double&nbsp;longitude)</pre>
+<div class="block">Constructor for the object if the player chooses to record the location along with the points</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hash</code> - </dd>
+<dd><code>points</code> - </dd>
+<dd><code>latitude</code> - </dd>
+<dd><code>longitude</code> - </dd>
+</dl>
+</li>
+</ul>
 <a id="&lt;init&gt;()">
 <!--   -->
 </a>
@@ -217,6 +314,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>GameQRCode</h4>
 <pre>public&nbsp;GameQRCode()</pre>
+<div class="block">No arg Constructor to create class from data fetched from Database</div>
 </li>
 </ul>
 </li>
@@ -229,6 +327,19 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="getHash()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHash</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getHash()</pre>
+<div class="block">Returns the hash of the QR Code</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
 <a id="getPoints()">
 <!--   -->
 </a>
@@ -236,24 +347,91 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getPoints</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getPoints()</pre>
-<div class="block">return the point value associated with the QR code</div>
+<div class="block">Returns the amount of points of the QR Code</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>points</dd>
 </dl>
 </li>
 </ul>
-<a id="getHash()">
+<a id="getAmountOfScans()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAmountOfScans</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getAmountOfScans()</pre>
+<div class="block">Returns the amount times the QR code has been scanned by all players</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a id="getCommentSection()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommentSection</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String[]&nbsp;getCommentSection()</pre>
+<div class="block">Returns the list of comments for this QR Code</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
+<a id="getLatitude()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLatitude</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getLatitude()</pre>
+<div class="block">Returns the Latitude of the QR Code</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Latitude</dd>
+</dl>
+</li>
+</ul>
+<a id="getLongitude()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLongitude</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getLongitude()</pre>
+<div class="block">Returns the longitude of the QR Code</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Longitude</dd>
+</dl>
+</li>
+</ul>
+<a id="setLatitude(double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLatitude</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLatitude&#8203;(double&nbsp;latitude)</pre>
+<div class="block">Sets the Latitude of the QR Code</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>latitude</code> - </dd>
+</dl>
+</li>
+</ul>
+<a id="setLongitude(double)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getHash</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getHash()</pre>
-<div class="block">returns the has associated with the QR code</div>
+<h4>setLongitude</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLongitude&#8203;(double&nbsp;longitude)</pre>
+<div class="block">Sets the longitude of the QR Code</div>
 <dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>hash</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>longitude</code> - </dd>
 </dl>
 </li>
 </ul>
