@@ -213,7 +213,10 @@ extends android.widget.ArrayAdapter&lt;<a href="Comment.html" title="class in co
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getView(int,android.view.View,android.view.ViewGroup)">getView</a></span>&#8203;(int&nbsp;position,
        android.view.View&nbsp;convertView,
        android.view.ViewGroup&nbsp;parent)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">generates and returns a View element representing a single comment, which is part
+ of a ListView</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -292,11 +295,19 @@ public&nbsp;android.view.View&nbsp;getView&#8203;(int&nbsp;position,
                                  android.view.View&nbsp;convertView,
                                  @NonNull
                                  android.view.ViewGroup&nbsp;parent)</pre>
+<div class="block">generates and returns a View element representing a single comment, which is part
+ of a ListView</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getView</code>&nbsp;in interface&nbsp;<code>android.widget.Adapter</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>getView</code>&nbsp;in class&nbsp;<code>android.widget.ArrayAdapter&lt;<a href="Comment.html" title="class in com.example.qracutie">Comment</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>position</code> - the index of the view within a list</dd>
+<dd><code>convertView</code> - an old view to reuse</dd>
+<dd><code>parent</code> - the list which contains the view</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>View element</dd>
 </dl>
 </li>
 </ul>

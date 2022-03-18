@@ -105,7 +105,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tbody>
 <tr class="altColor">
 <th class="colFirst" scope="row"><a href="QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Listener for functions when QR Code is found/not found</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -128,7 +130,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="CameraActivity.html" title="class in com.example.qracutie">CameraActivity</a></th>
 <td class="colLast">
-<div class="block">Allows a player to scan QR codes and also capture images
+<div class="block">Activity that calls the camera in order to scan a QR Code
+ Allows a player to scan QR codes and also capture images
  of said QR codes.</div>
 </td>
 </tr>
@@ -175,7 +178,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Retrieves player location and shows Qr Codes within a certain range
 
  Code for accessing location, asking for permissions, and onLocationChange listener have been used from -
- https://github.com/mohsinulkabir14/An-Android-Application-to-Show-Your-Position-On-The-Map-Using-Google-Maps-API/blob/master/app/src/main/java/com/example/maplocation/MapsActivity.java</div>
+ From: Github
+ URL: https://github.com/mohsinulkabir14/An-Android-Application-to-Show-Your-Position-On-The-Map-Using-Google-Maps-API/blob/master/app/src/main/java/com/example/maplocation/MapsActivity.java
+ Author:Mohsinul Kabir</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -194,12 +199,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <th class="colFirst" scope="row"><a href="QRCodeImageAnalyzer.html" title="class in com.example.qracutie">QRCodeImageAnalyzer</a></th>
 <td class="colLast">
-<div class="block">Allows for an image to be scanned in real time to search for QR codes within
- the image.</div>
+<div class="block">Analyzes the image of the QR and extracts the data from it
+
+ This entire class was implemented using -
+ From: Learn To Android
+ URL:https://learntodroid.com/how-to-create-a-qr-code-scanner-app-in-android/
+ Author:Jarrod Lilkendey</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><a href="SaveQR.html" title="class in com.example.qracutie">SaveQR</a></th>
+<th class="colFirst" scope="row"><a href="SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></th>
 <td class="colLast">
 <div class="block">The save QR activity allows a user to save a QR code to their player profile, and also
  gives the user two additional options:

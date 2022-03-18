@@ -175,8 +175,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">CameraActivity</span>
 extends androidx.appcompat.app.AppCompatActivity</pre>
-<div class="block">Allows a player to scan QR codes and also capture images
- of said QR codes. Accessed via the MainActivity</div>
+<div class="block">Activity that calls the camera in order to scan a QR Code
+ Allows a player to scan QR codes and also capture images
+ of said QR codes. Accessed via the MainActivity
+
+ Majority of the entire class was implemented using -
+ From: Learn To Android
+ URL:https://learntodroid.com/how-to-create-a-qr-code-scanner-app-in-android/
+ Author:Jarrod Lilkendey</div>
 </li>
 </ul>
 </div>
@@ -294,7 +300,9 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRequestPermissionsResult(int,java.lang.String%5B%5D,int%5B%5D)">onRequestPermissionsResult</a></span>&#8203;(int&nbsp;requestCode,
                           java.lang.String[]&nbsp;permissions,
                           int[]&nbsp;grantResults)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Checks the result of the request permission for the camera</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -462,11 +470,16 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
                                        java.lang.String[]&nbsp;permissions,
                                        @NonNull
                                        int[]&nbsp;grantResults)</pre>
+<div class="block">Checks the result of the request permission for the camera</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>onRequestPermissionsResult</code>&nbsp;in interface&nbsp;<code>androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onRequestPermissionsResult</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.FragmentActivity</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>requestCode</code> - the request</dd>
+<dd><code>permissions</code> - the permissions</dd>
+<dd><code>grantResults</code> - the grant results</dd>
 </dl>
 </li>
 </ul>

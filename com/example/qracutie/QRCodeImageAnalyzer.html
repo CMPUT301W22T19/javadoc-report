@@ -136,8 +136,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">QRCodeImageAnalyzer</span>
 extends java.lang.Object
 implements androidx.camera.core.ImageAnalysis.Analyzer</pre>
-<div class="block">Allows for an image to be scanned in real time to search for QR codes within
- the image.</div>
+<div class="block">Analyzes the image of the QR and extracts the data from it
+
+ This entire class was implemented using -
+ From: Learn To Android
+ URL:https://learntodroid.com/how-to-create-a-qr-code-scanner-app-in-android/
+ Author:Jarrod Lilkendey</div>
 </li>
 </ul>
 </div>
@@ -159,7 +163,10 @@ implements androidx.camera.core.ImageAnalysis.Analyzer</pre>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.example.qracutie.QRCodeFoundListener)">QRCodeImageAnalyzer</a></span>&#8203;(<a href="QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a>&nbsp;listener)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">generates a new instance of the QRCodeAnalyzer class, having a specific listener
+ interface</div>
+</td>
 </tr>
 </table>
 </li>
@@ -182,7 +189,9 @@ implements androidx.camera.core.ImageAnalysis.Analyzer</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#analyze(androidx.camera.core.ImageProxy)">analyze</a></span>&#8203;(androidx.camera.core.ImageProxy&nbsp;image)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">analyzes image of the QR code and extracts data from it</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -215,6 +224,12 @@ implements androidx.camera.core.ImageAnalysis.Analyzer</pre>
 <li class="blockList">
 <h4>QRCodeImageAnalyzer</h4>
 <pre>public&nbsp;QRCodeImageAnalyzer&#8203;(<a href="QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a>&nbsp;listener)</pre>
+<div class="block">generates a new instance of the QRCodeAnalyzer class, having a specific listener
+ interface</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listener</code> - an implementation of QRCodeFoundListener</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -235,9 +250,12 @@ implements androidx.camera.core.ImageAnalysis.Analyzer</pre>
 <h4>analyze</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;analyze&#8203;(@NonNull
                     androidx.camera.core.ImageProxy&nbsp;image)</pre>
+<div class="block">analyzes image of the QR code and extracts data from it</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>analyze</code>&nbsp;in interface&nbsp;<code>androidx.camera.core.ImageAnalysis.Analyzer</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>image</code> - an ImageProxy object</dd>
 </dl>
 </li>
 </ul>

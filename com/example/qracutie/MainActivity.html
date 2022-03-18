@@ -293,27 +293,38 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onActivityResult(int,int,android.content.Intent)">onActivityResult</a></span>&#8203;(int&nbsp;requestCode,
                 int&nbsp;resultCode,
                 android.content.Intent&nbsp;data)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Updates relevant player atttributes when the player changes their email or phonenumber or both</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreate(android.os.Bundle)">onCreate</a></span>&#8203;(android.os.Bundle&nbsp;savedInstanceState)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Loads in existing user info or else generates a new user
+ Contains the on click method for the map and the player's profile image</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPause()">onPause</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Saves player data</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveUser()">saveUser</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Saves player name</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#userAccountButtonClicked(android.view.View)">userAccountButtonClicked</a></span>&#8203;(android.view.View&nbsp;view)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Onclick method for when the user accesses their account info (email and phone number)</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -464,9 +475,13 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <li class="blockList">
 <h4>onCreate</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;onCreate&#8203;(android.os.Bundle&nbsp;savedInstanceState)</pre>
+<div class="block">Loads in existing user info or else generates a new user
+ Contains the on click method for the map and the player's profile image</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onCreate</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.FragmentActivity</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>savedInstanceState</code> - </dd>
 </dl>
 </li>
 </ul>
@@ -477,6 +492,7 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <li class="blockList">
 <h4>onPause</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;onPause()</pre>
+<div class="block">Saves player data</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onPause</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.FragmentActivity</code></dd>
@@ -490,6 +506,7 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <li class="blockList">
 <h4>saveUser</h4>
 <pre class="methodSignature">protected&nbsp;void&nbsp;saveUser()</pre>
+<div class="block">Saves player name</div>
 </li>
 </ul>
 <a id="userAccountButtonClicked(android.view.View)">
@@ -499,6 +516,11 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <li class="blockList">
 <h4>userAccountButtonClicked</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;userAccountButtonClicked&#8203;(android.view.View&nbsp;view)</pre>
+<div class="block">Onclick method for when the user accesses their account info (email and phone number)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - </dd>
+</dl>
 </li>
 </ul>
 <a id="onActivityResult(int,int,android.content.Intent)">
@@ -510,9 +532,14 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 <pre class="methodSignature">protected&nbsp;void&nbsp;onActivityResult&#8203;(int&nbsp;requestCode,
                                 int&nbsp;resultCode,
                                 android.content.Intent&nbsp;data)</pre>
+<div class="block">Updates relevant player atttributes when the player changes their email or phonenumber or both</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>onActivityResult</code>&nbsp;in class&nbsp;<code>androidx.fragment.app.FragmentActivity</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>requestCode</code> - </dd>
+<dd><code>resultCode</code> - </dd>
+<dd><code>data</code> - </dd>
 </dl>
 </li>
 </ul>

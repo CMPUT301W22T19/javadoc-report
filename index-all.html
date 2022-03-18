@@ -107,7 +107,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">adds a new QR code to the set of all qr codes belonging to the player.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/QRCodeImageAnalyzer.html#analyze(androidx.camera.core.ImageProxy)">analyze(ImageProxy)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/QRCodeImageAnalyzer.html" title="class in com.example.qracutie">QRCodeImageAnalyzer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">analyzes image of the QR code and extracts data from it</div>
+</dd>
 </dl>
 <a id="I:C">
 <!--   -->
@@ -116,7 +118,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><a href="com/example/qracutie/CameraActivity.html" title="class in com.example.qracutie"><span class="typeNameLink">CameraActivity</span></a> - Class in <a href="com/example/qracutie/package-summary.html">com.example.qracutie</a></dt>
 <dd>
-<div class="block">Allows a player to scan QR codes and also capture images
+<div class="block">Activity that calls the camera in order to scan a QR Code
+ Allows a player to scan QR codes and also capture images
  of said QR codes.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CameraActivity.html#%3Cinit%3E()">CameraActivity()</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/CameraActivity.html" title="class in com.example.qracutie">CameraActivity</a></dt>
@@ -191,7 +194,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  PlayerCollectionActivity.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/GameQRCodeAdapter.html#%3Cinit%3E(android.content.Context,java.util.ArrayList,java.util.HashMap)">GameQRCodeAdapter(Context, ArrayList&lt;GameQRCode&gt;, HashMap&lt;String, Bitmap&gt;)</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/GameQRCodeAdapter.html" title="class in com.example.qracutie">GameQRCodeAdapter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">generates a new instance of the GameQRCodeAdapter class</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/GameQRCode.html#getAmountOfScans()">getAmountOfScans()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a></dt>
 <dd>
 <div class="block">Returns the amount times the QR code has been scanned by all players</div>
@@ -209,7 +214,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  https://stackoverflow.com/questions/49839437/how-to-show-markers-only-inside-of-radius-circle-on-maps</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#getEmail()">getEmail()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">returns email string of the user</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#getGameQRCodeImages()">getGameQRCodeImages()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
 <dd>
 <div class="block">returns a hashmap of Bitmap images associated with a game QR code</div>
@@ -239,7 +246,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">return the QR code belonging to the player which has the lowest point value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#getPhoneNumber()">getPhoneNumber()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">returns the phone number string associated with user</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/GameQRCode.html#getPoints()">getPoints()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a></dt>
 <dd>
 <div class="block">Returns the amount of points of the QR Code</div>
@@ -249,7 +258,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">return the sum of QR code points belonging to the player.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#getProfileImage()">getProfileImage()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">returns a URI string that maps to a user profile image in the database</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#getProfilePic()">getProfilePic()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
 <dd>
 <div class="block">returns profile picture associated with player</div>
@@ -263,9 +274,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">returns username associated with Player</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CommentList.html#getView(int,android.view.View,android.view.ViewGroup)">getView(int, View, ViewGroup)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/CommentList.html" title="class in com.example.qracutie">CommentList</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">generates and returns a View element representing a single comment, which is part
+ of a ListView</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/GameQRCodeAdapter.html#getView(int,android.view.View,android.view.ViewGroup)">getView(int, View, ViewGroup)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/GameQRCodeAdapter.html" title="class in com.example.qracutie">GameQRCodeAdapter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">generates and returns a View element representing a single GameQRCode, which is part
+ of a ListView</div>
+</dd>
 </dl>
 <a id="I:M">
 <!--   -->
@@ -283,7 +300,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Retrieves player location and shows Qr Codes within a certain range
 
  Code for accessing location, asking for permissions, and onLocationChange listener have been used from -
- https://github.com/mohsinulkabir14/An-Android-Application-to-Show-Your-Position-On-The-Map-Using-Google-Maps-API/blob/master/app/src/main/java/com/example/maplocation/MapsActivity.java</div>
+ From: Github
+ URL: https://github.com/mohsinulkabir14/An-Android-Application-to-Show-Your-Position-On-The-Map-Using-Google-Maps-API/blob/master/app/src/main/java/com/example/maplocation/MapsActivity.java
+ Author:Mohsinul Kabir</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MapsActivity.html#%3Cinit%3E()">MapsActivity()</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/MapsActivity.html" title="class in com.example.qracutie">MapsActivity</a></dt>
 <dd>&nbsp;</dd>
@@ -294,9 +313,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">O</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MainActivity.html#onActivityResult(int,int,android.content.Intent)">onActivityResult(int, int, Intent)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MainActivity.html" title="class in com.example.qracutie">MainActivity</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQR.html#onCheckboxClicked(android.view.View)">onCheckboxClicked(View)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/SaveQR.html" title="class in com.example.qracutie">SaveQR</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Updates relevant player atttributes when the player changes their email or phonenumber or both</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQRActivity.html#onCheckboxClicked(android.view.View)">onCheckboxClicked(View)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></dt>
+<dd>
+<div class="block">after user checks the enable location box, the method tests to see if user has enabled
+ location permissions on their device, and then requests location from the device</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Account.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Account.html" title="class in com.example.qracutie">Account</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CameraActivity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/CameraActivity.html" title="class in com.example.qracutie">CameraActivity</a></dt>
@@ -304,23 +328,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CommentsPage.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/CommentsPage.html" title="class in com.example.qracutie">CommentsPage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MainActivity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MainActivity.html" title="class in com.example.qracutie">MainActivity</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Loads in existing user info or else generates a new user
+ Contains the on click method for the map and the player's profile image</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MapsActivity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MapsActivity.html" title="class in com.example.qracutie">MapsActivity</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/PlayerCollectionActivity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/PlayerCollectionActivity.html" title="class in com.example.qracutie">PlayerCollectionActivity</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQR.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/SaveQR.html" title="class in com.example.qracutie">SaveQR</a></dt>
+<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQRActivity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MapsActivity.html#onMapReady(com.google.android.gms.maps.GoogleMap)">onMapReady(GoogleMap)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MapsActivity.html" title="class in com.example.qracutie">MapsActivity</a></dt>
 <dd>
 <div class="block">Manipulates the map once available.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MainActivity.html#onPause()">onPause()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MainActivity.html" title="class in com.example.qracutie">MainActivity</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Saves player data</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/QRCodeFoundListener.html#onQRCodeFound(java.lang.String)">onQRCodeFound(String)</a></span> - Method in interface com.example.qracutie.<a href="com/example/qracutie/QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CameraActivity.html#onRequestPermissionsResult(int,java.lang.String%5B%5D,int%5B%5D)">onRequestPermissionsResult(int, String[], int[])</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/CameraActivity.html" title="class in com.example.qracutie">CameraActivity</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Checks the result of the request permission for the camera</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MapsActivity.html#onStop()">onStop()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MapsActivity.html" title="class in com.example.qracutie">MapsActivity</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -351,14 +382,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">Q</h2>
 <dl>
 <dt><a href="com/example/qracutie/QRCodeFoundListener.html" title="interface in com.example.qracutie"><span class="typeNameLink">QRCodeFoundListener</span></a> - Interface in <a href="com/example/qracutie/package-summary.html">com.example.qracutie</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Listener for functions when QR Code is found/not found</div>
+</dd>
 <dt><a href="com/example/qracutie/QRCodeImageAnalyzer.html" title="class in com.example.qracutie"><span class="typeNameLink">QRCodeImageAnalyzer</span></a> - Class in <a href="com/example/qracutie/package-summary.html">com.example.qracutie</a></dt>
 <dd>
-<div class="block">Allows for an image to be scanned in real time to search for QR codes within
- the image.</div>
+<div class="block">Analyzes the image of the QR and extracts the data from it
+
+ This entire class was implemented using -
+ From: Learn To Android
+ URL:https://learntodroid.com/how-to-create-a-qr-code-scanner-app-in-android/
+ Author:Jarrod Lilkendey</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/QRCodeImageAnalyzer.html#%3Cinit%3E(com.example.qracutie.QRCodeFoundListener)">QRCodeImageAnalyzer(QRCodeFoundListener)</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/QRCodeImageAnalyzer.html" title="class in com.example.qracutie">QRCodeImageAnalyzer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">generates a new instance of the QRCodeAnalyzer class, having a specific listener
+ interface</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/QRCodeFoundListener.html#qrCodeNotFound()">qrCodeNotFound()</a></span> - Method in interface com.example.qracutie.<a href="com/example/qracutie/QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -367,18 +407,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">S</h2>
 <dl>
-<dt><a href="com/example/qracutie/SaveQR.html" title="class in com.example.qracutie"><span class="typeNameLink">SaveQR</span></a> - Class in <a href="com/example/qracutie/package-summary.html">com.example.qracutie</a></dt>
+<dt><a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie"><span class="typeNameLink">SaveQRActivity</span></a> - Class in <a href="com/example/qracutie/package-summary.html">com.example.qracutie</a></dt>
 <dd>
 <div class="block">The save QR activity allows a user to save a QR code to their player profile, and also
  gives the user two additional options:
  1.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQR.html#%3Cinit%3E()">SaveQR()</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/SaveQR.html" title="class in com.example.qracutie">SaveQR</a></dt>
+<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQRActivity.html#%3Cinit%3E()">SaveQRActivity()</a></span> - Constructor for class com.example.qracutie.<a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MainActivity.html#saveUser()">saveUser()</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MainActivity.html" title="class in com.example.qracutie">MainActivity</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Saves player name</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#setEmail(java.lang.String)">setEmail(String)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">sets email of user to specified string</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/GameQRCode.html#setLatitude(double)">setLatitude(double)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a></dt>
 <dd>
 <div class="block">Sets the Latitude of the QR Code</div>
@@ -388,9 +432,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets the longitude of the QR Code</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#setPhoneNumber(java.lang.String)">setPhoneNumber(String)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">sets phone number of user to a specified string</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#setProfileImage(java.lang.String)">setProfileImage(String)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets a URI string that maps to a profile image in the database</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/Player.html#setProfilePic(android.graphics.Bitmap)">setProfilePic(Bitmap)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></dt>
 <dd>
 <div class="block">updates profile picture associated with player</div>
@@ -399,8 +447,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">updates username associated with player</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQR.html#shaHash(java.lang.String)">shaHash(String)</a></span> - Static method in class com.example.qracutie.<a href="com/example/qracutie/SaveQR.html" title="class in com.example.qracutie">SaveQR</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/example/qracutie/SaveQRActivity.html#shaHash(java.lang.String)">shaHash(String)</a></span> - Static method in class com.example.qracutie.<a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></dt>
+<dd>
+<div class="block">hashes a string representation of a QR code using the sha 256 algorithm</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/CameraActivity.html#SHARED_PREFS">SHARED_PREFS</a></span> - Static variable in class com.example.qracutie.<a href="com/example/qracutie/CameraActivity.html" title="class in com.example.qracutie">CameraActivity</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -418,7 +468,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">U</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="com/example/qracutie/MainActivity.html#userAccountButtonClicked(android.view.View)">userAccountButtonClicked(View)</a></span> - Method in class com.example.qracutie.<a href="com/example/qracutie/MainActivity.html" title="class in com.example.qracutie">MainActivity</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Onclick method for when the user accesses their account info (email and phone number)</div>
+</dd>
 </dl>
 <a id="I:V">
 <!--   -->
