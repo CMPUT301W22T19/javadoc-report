@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,6 +154,12 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Player</a></span>()</code></th>
+<td class="colLast">
+<div class="block">No argument constructor for db</div>
+</td>
+</tr>
+<tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">Player</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">
 <div class="block">public constructor.</div>
@@ -179,125 +185,131 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addGameQRCode(com.example.qracutie.GameQRCode,android.graphics.Bitmap)">addGameQRCode</a></span>&#8203;(<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&nbsp;qrCode,
-             android.graphics.Bitmap&nbsp;image)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addGameQRCode(com.example.qracutie.GameQRCode)">addGameQRCode</a></span>&#8203;(<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&nbsp;qrCode)</code></th>
 <td class="colLast">
 <div class="block">adds a new QR code to the set of all qr codes belonging to the player.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addImage(java.lang.String,java.lang.String)">addImage</a></span>&#8203;(java.lang.String&nbsp;hash,
+        java.lang.String&nbsp;image)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.Boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkIfGameQRCodeScanned(java.lang.String)">checkIfGameQRCodeScanned</a></span>&#8203;(java.lang.String&nbsp;newCodeHash)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteGameQRCode(com.example.qracutie.GameQRCode)">deleteGameQRCode</a></span>&#8203;(<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&nbsp;qrCode)</code></th>
 <td class="colLast">
 <div class="block">deletes a QR code belonging to the player.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEmail()">getEmail</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns email string of the user</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.HashMap&lt;java.lang.String,&#8203;android.graphics.Bitmap&gt;</code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.HashMap&lt;java.lang.String,&#8203;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameQRCodeImages()">getGameQRCodeImages</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns a hashmap of Bitmap images associated with a game QR code</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameQRCodes()">getGameQRCodes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns all GameQRCode objects which belong to the Player's collection.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHighestQRCode()">getHighestQRCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the QR code belonging to the player which has the highest point value.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowestQRCode()">getLowestQRCode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the QR code belonging to the player which has the lowest point value.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPhoneNumber()">getPhoneNumber</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns the phone number string associated with user</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointTotal()">getPointTotal</a></span>()</code></th>
 <td class="colLast">
 <div class="block">return the sum of QR code points belonging to the player.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProfileImage()">getProfileImage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns a URI string that maps to a user profile image in the database</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>android.graphics.Bitmap</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProfilePic()">getProfilePic</a></span>()</code></th>
-<td class="colLast">
-<div class="block">returns profile picture associated with player</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalCodes()">getTotalCodes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns a count of the total number of GameQRCodes wihtin the collection</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUsername()">getUsername</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns username associated with Player</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEmail(java.lang.String)">setEmail</a></span>&#8203;(java.lang.String&nbsp;email)</code></th>
 <td class="colLast">
 <div class="block">sets email of user to specified string</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGameQRCodeImages(java.util.HashMap)">setGameQRCodeImages</a></span>&#8203;(java.util.HashMap&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;newMap)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGameQRCodes(java.util.ArrayList)">setGameQRCodes</a></span>&#8203;(java.util.ArrayList&lt;<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&gt;&nbsp;newList)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPhoneNumber(java.lang.String)">setPhoneNumber</a></span>&#8203;(java.lang.String&nbsp;phoneNumber)</code></th>
 <td class="colLast">
 <div class="block">sets phone number of user to a specified string</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProfileImage(java.lang.String)">setProfileImage</a></span>&#8203;(java.lang.String&nbsp;profileImage)</code></th>
 <td class="colLast">
 <div class="block">Sets a URI string that maps to a profile image in the database</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProfilePic(android.graphics.Bitmap)">setProfilePic</a></span>&#8203;(android.graphics.Bitmap&nbsp;profilePic)</code></th>
-<td class="colLast">
-<div class="block">updates profile picture associated with player</div>
-</td>
-</tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUsername(java.lang.String)">setUsername</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">
@@ -331,7 +343,7 @@ extends java.lang.Object</pre>
 <a id="&lt;init&gt;(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Player</h4>
 <pre>public&nbsp;Player&#8203;(java.lang.String&nbsp;username)</pre>
@@ -340,6 +352,16 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>username</code> - a unique alphanumeric identifier</dd>
 </dl>
+</li>
+</ul>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Player</h4>
+<pre>public&nbsp;Player()</pre>
+<div class="block">No argument constructor for db</div>
 </li>
 </ul>
 </li>
@@ -464,49 +486,19 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="getProfilePic()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getProfilePic</h4>
-<pre class="methodSignature">public&nbsp;android.graphics.Bitmap&nbsp;getProfilePic()</pre>
-<div class="block">returns profile picture associated with player</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Bitmap</dd>
-</dl>
-</li>
-</ul>
-<a id="setProfilePic(android.graphics.Bitmap)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setProfilePic</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setProfilePic&#8203;(android.graphics.Bitmap&nbsp;profilePic)</pre>
-<div class="block">updates profile picture associated with player</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>profilePic</code> - </dd>
-</dl>
-</li>
-</ul>
-<a id="addGameQRCode(com.example.qracutie.GameQRCode,android.graphics.Bitmap)">
+<a id="addGameQRCode(com.example.qracutie.GameQRCode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addGameQRCode</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addGameQRCode&#8203;(<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&nbsp;qrCode,
-                          android.graphics.Bitmap&nbsp;image)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addGameQRCode&#8203;(<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&nbsp;qrCode)</pre>
 <div class="block">adds a new QR code to the set of all qr codes belonging to the player. If
  image parameter is not null, it adds an image to be associated with the QR code.
  Updates the highest/lowest scoring QR codes and the sum of scores</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>qrCode</code> - a QR code to belong to the player</dd>
-<dd><code>image</code> - an image to associate to the QR code, or null</dd>
 </dl>
 </li>
 </ul>
@@ -539,13 +531,22 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a id="checkIfGameQRCodeScanned(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkIfGameQRCodeScanned</h4>
+<pre class="methodSignature">public&nbsp;java.lang.Boolean&nbsp;checkIfGameQRCodeScanned&#8203;(java.lang.String&nbsp;newCodeHash)</pre>
+</li>
+</ul>
 <a id="getGameQRCodeImages()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getGameQRCodeImages</h4>
-<pre class="methodSignature">public&nbsp;java.util.HashMap&lt;java.lang.String,&#8203;android.graphics.Bitmap&gt;&nbsp;getGameQRCodeImages()</pre>
+<pre class="methodSignature">public&nbsp;java.util.HashMap&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;getGameQRCodeImages()</pre>
 <div class="block">returns a hashmap of Bitmap images associated with a game QR code</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -601,7 +602,7 @@ extends java.lang.Object</pre>
 <a id="getTotalCodes()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getTotalCodes</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getTotalCodes()</pre>
@@ -610,6 +611,34 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>count of GameQRCodes</dd>
 </dl>
+</li>
+</ul>
+<a id="setGameQRCodes(java.util.ArrayList)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setGameQRCodes</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setGameQRCodes&#8203;(java.util.ArrayList&lt;<a href="GameQRCode.html" title="class in com.example.qracutie">GameQRCode</a>&gt;&nbsp;newList)</pre>
+</li>
+</ul>
+<a id="setGameQRCodeImages(java.util.HashMap)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setGameQRCodeImages</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setGameQRCodeImages&#8203;(java.util.HashMap&lt;java.lang.String,&#8203;java.lang.String&gt;&nbsp;newMap)</pre>
+</li>
+</ul>
+<a id="addImage(java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>addImage</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;addImage&#8203;(java.lang.String&nbsp;hash,
+                     java.lang.String&nbsp;image)</pre>
 </li>
 </ul>
 </li>

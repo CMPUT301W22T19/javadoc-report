@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -262,13 +262,27 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistance(double,double,double,double)">getDistance</a></span>&#8203;(double&nbsp;LAT1,
+           double&nbsp;LONG1,
+           double&nbsp;LAT2,
+           double&nbsp;LONG2)</code></th>
+<td class="colLast">
+<div class="block">This function uses the latitude and longitude from 2 locations to determine their distance
+ and returns that distance as a double
+
+ The following function was obtained from the answer of this stackoverflow question
+ https://stackoverflow.com/questions/49839437/how-to-show-markers-only-inside-of-radius-circle-on-maps</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCheckboxClicked(android.view.View)">onCheckboxClicked</a></span>&#8203;(android.view.View&nbsp;view)</code></th>
 <td class="colLast">
@@ -276,13 +290,13 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
  location permissions on their device, and then requests location from the device</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCreate(android.os.Bundle)">onCreate</a></span>&#8203;(android.os.Bundle&nbsp;savedInstanceState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static java.lang.String</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shaHash(java.lang.String)">shaHash</a></span>&#8203;(java.lang.String&nbsp;base)</code></th>
 <td class="colLast">
 <div class="block">hashes a string representation of a QR code using the sha 256 algorithm</div>
@@ -407,6 +421,31 @@ extends androidx.appcompat.app.AppCompatActivity</pre>
 </dl>
 </li>
 </ul>
+<a id="getDistance(double,double,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDistance</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getDistance&#8203;(double&nbsp;LAT1,
+                          double&nbsp;LONG1,
+                          double&nbsp;LAT2,
+                          double&nbsp;LONG2)</pre>
+<div class="block">This function uses the latitude and longitude from 2 locations to determine their distance
+ and returns that distance as a double
+
+ The following function was obtained from the answer of this stackoverflow question
+ https://stackoverflow.com/questions/49839437/how-to-show-markers-only-inside-of-radius-circle-on-maps</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>LAT1</code> - Location 1 Latitude</dd>
+<dd><code>LONG1</code> - Location 1 Longitude</dd>
+<dd><code>LAT2</code> - Location 2 Latitude</dd>
+<dd><code>LONG2</code> - Location 2 Longitude</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
+</li>
+</ul>
 <a id="onCheckboxClicked(android.view.View)">
 <!--   -->
 </a>
@@ -429,7 +468,7 @@ public&nbsp;void&nbsp;onCheckboxClicked&#8203;(android.view.View&nbsp;view)</pre
 <ul class="blockListLast">
 <li class="blockList">
 <h4>shaHash</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;shaHash&#8203;(java.lang.String&nbsp;base)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;shaHash&#8203;(java.lang.String&nbsp;base)</pre>
 <div class="block">hashes a string representation of a QR code using the sha 256 algorithm</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

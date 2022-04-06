@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":2,"i1":2,"i2":2,"i3":2,"i4":2,"i5":2,"i6":2,"i7":2,"i8":2,"i9":2,"i10":2,"i11":1,"i12":2,"i13":2};
+var data = {"i0":2,"i1":2,"i2":2,"i3":2,"i4":2,"i5":2,"i6":2,"i7":2,"i8":2,"i9":2,"i10":2,"i11":2,"i12":2,"i13":2,"i14":2,"i15":2,"i16":2,"i17":2,"i18":1,"i19":2,"i20":2,"i21":2,"i22":2,"i23":2};
 var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,25 +172,74 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </th>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><a href="com/example/qracutie/NearByCodesAdapter.html" title="class in com.example.qracutie">NearByCodesAdapter</a></td>
+<th class="colLast" scope="row">
+<div class="block">The nearby codes adabter allows NearbyQR Codes to be added to an array adapter for
+ display in a listview element within the maps activity.</div>
+</th>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><a href="com/example/qracutie/NearbyQRCode.html" title="class in com.example.qracutie">NearbyQRCode</a></td>
+<th class="colLast" scope="row">
+<div class="block">The nearby QR code represents a QR code on the map which can be seen within the user's
+ searchable radius.</div>
+</th>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><a href="com/example/qracutie/OwnerAllPlayers.html" title="class in com.example.qracutie">OwnerAllPlayers</a></td>
+<th class="colLast" scope="row">
+<div class="block">Responsible for displaying and active management of players and QR codes
+ The owner can view and click delete on players and QR Codes here</div>
+</th>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><a href="com/example/qracutie/OwnerLogin.html" title="class in com.example.qracutie">OwnerLogin</a></td>
+<th class="colLast" scope="row">
+<div class="block">The page where the owner logs in
+ The owner's login information is authenticated via firebase
+ The owner can either login or
+ reset their password via email</div>
+</th>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><a href="com/example/qracutie/OwnerQRRecyclerviewAdapter.html" title="class in com.example.qracutie">OwnerQRRecyclerviewAdapter</a></td>
+<th class="colLast" scope="row">
+<div class="block">Responsible for listing all QR codes of the app, and enabling deletion of these QR codes</div>
+</th>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><a href="com/example/qracutie/OwnerRecyclerviewAdapter.html" title="class in com.example.qracutie">OwnerRecyclerviewAdapter</a></td>
+<th class="colLast" scope="row">
+<div class="block">Responsible for listing all players of the app, and enabling deletion of these players</div>
+</th>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><a href="com/example/qracutie/Player.html" title="class in com.example.qracutie">Player</a></td>
 <th class="colLast" scope="row">
 <div class="block">Represents an application user.</div>
 </th>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><a href="com/example/qracutie/PlayerCollectionActivity.html" title="class in com.example.qracutie">PlayerCollectionActivity</a></td>
 <th class="colLast" scope="row">
 <div class="block">The player collection activity display's a players statistics and
  any QR codes which have been added to their code.</div>
 </th>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><a href="com/example/qracutie/PlayerListAdapter.html" title="class in com.example.qracutie">PlayerListAdapter</a></td>
+<th class="colLast" scope="row">
+<div class="block">An array adapter which is used to display a list of Player profiles within the
+ MainActivity.</div>
+</th>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><a href="com/example/qracutie/QRCodeFoundListener.html" title="interface in com.example.qracutie">QRCodeFoundListener</a></td>
 <th class="colLast" scope="row">
 <div class="block">Listener for functions when QR Code is found/not found</div>
 </th>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><a href="com/example/qracutie/QRCodeImageAnalyzer.html" title="class in com.example.qracutie">QRCodeImageAnalyzer</a></td>
 <th class="colLast" scope="row">
 <div class="block">Analyzes the image of the QR and extracts the data from it
@@ -201,12 +250,33 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  Author:Jarrod Lilkendey</div>
 </th>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><a href="com/example/qracutie/SaveImageActivity.html" title="class in com.example.qracutie">SaveImageActivity</a></td>
+<th class="colLast" scope="row">
+<div class="block">The SaveImageActivity allows a user to attach an image, using the default built in camera,
+ to some QR code that has just been scanned.</div>
+</th>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><a href="com/example/qracutie/SaveQRActivity.html" title="class in com.example.qracutie">SaveQRActivity</a></td>
 <th class="colLast" scope="row">
 <div class="block">The save QR activity allows a user to save a QR code to their player profile, and also
  gives the user two additional options:
  1.</div>
+</th>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><a href="com/example/qracutie/SearchPlayer.html" title="class in com.example.qracutie">SearchPlayer</a></td>
+<th class="colLast" scope="row">
+<div class="block">The SearchPlayer activity displays information for a player that has just been
+ searched by the user on the homepage.</div>
+</th>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><a href="com/example/qracutie/ShareableQrActivity.html" title="class in com.example.qracutie">ShareableQrActivity</a></td>
+<th class="colLast" scope="row">
+<div class="block">The shareable QR Activity generates and displays a QR code which encodes a special string,
+ meant to communicate with other users either one's game status, or one's player profile.</div>
 </th>
 </tr>
 </table>
